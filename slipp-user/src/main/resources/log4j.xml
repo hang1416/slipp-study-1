@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+	<appender name="stdout" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{ABSOLUTE} %5p %c{1} %M():%L - %m %n" />
+		</layout>
+	</appender>
+
+	<logger name="net.slipp">
+		<level value="DEBUG" />
+	</logger>
+	
+	<logger name="org.hibernate">
+		<level value="WARN" />
+	</logger>
+
+
+	<logger name="org.hibernate.SQL">
+		<level value="DEBUG" />
+	</logger>
+
+
+	<logger name="org.hibernate.type">
+		<level value="WARN" />
+	</logger>
+
+
+	<logger name="org.hibernate.type.BasicTypeRegistry">
+		<level value="WARN" />
+	</logger>
+
+
+	<logger name="org.hibernate.descriptor.sql.BasicExtractor">
+		<level value="WARN" />
+	</logger>
+
+	<logger name="org.springframework">
+		<level value="INFO" />
+	</logger>
+
+	<logger name="org.springframework.web.bind.annotation.support.HandlerMethodInvoker">
+		<level value="INFO" />
+	</logger>
+
+	<logger name="org.springframework.web.servlet.DispatcherServlet">
+		<level value="INFO" />
+	</logger>
+
+	<root>
+		<level value="INFO" />
+		<appender-ref ref="stdout" />
+	</root>
+</log4j:configuration>
