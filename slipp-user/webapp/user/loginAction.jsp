@@ -20,7 +20,7 @@
 <!--
 에러가 발생할 경우 이전 페이지로 이동.
 -->
-<script language="javascript">
+<script type="text/javascript">
 alert("<%=e.getMessage()%>");
 history.back();
 </script>

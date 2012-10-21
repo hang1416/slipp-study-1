@@ -19,7 +19,7 @@ try{
 	response.sendRedirect("index.jsp");
 } catch (Exception e) {
 %>
-<script language="javascript">
+<script type="text/javascript">
 alert("<%=e.getMessage()%>");
 history.back();
 </script>
