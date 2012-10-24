@@ -9,5 +9,6 @@
         여기가 메인입니다.<br/><br/>
         <a href="/user">사용자 관리 시스템</a>
         </div>
+        SLiPP 스터디
   </body>
 </html>
